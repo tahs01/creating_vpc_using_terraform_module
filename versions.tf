@@ -7,9 +7,6 @@ terraform {
   }
 }
 
-provider "aws" {
-  shared_config_files      = ["/home/vagrant/.aws/config"]
-  shared_credentials_files = ["/home/vagrant/.aws/credentials"]
-  profile                  = "thanhtikesoe-noc"             
+provider "aws" {             
   region                   = var.aws_region
 }
